@@ -19,8 +19,12 @@ class Messages:
         return f'The file "{file_name}" do not exists.'
 
     @classmethod
-    def overwrite(cls):
+    def overwrite_file(cls):
         return f'Do you want to overwrite the file?'
+
+    @classmethod
+    def overwrite_key(cls):
+        return f'Do you want to overwrite the key?'
 
     @classmethod
     def file_saved(cls):
@@ -29,6 +33,10 @@ class Messages:
     @classmethod
     def action_canceled(cls):
         return f'Action canceled.'
+
+    @classmethod
+    def file_not_found(cls):
+        return f'File not Found.'
 
 
 if __name__ == '__main__':

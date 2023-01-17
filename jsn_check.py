@@ -9,5 +9,6 @@ class Check:
             return False
 
     @classmethod
-    def check_key_in_dictionary(cls):
-        pass
+    def check_key_in_dictionary(cls, key, dictionary):
+        if key in dictionary:
+            return True

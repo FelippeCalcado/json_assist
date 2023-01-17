@@ -21,6 +21,9 @@ class JsnActions:
         with open(self.file_name, 'w') as file:
             file.write(json_file)
 
+    def add_key(self, dictionary, new_key, value):
+        dictionary[new_key] = value
+
 
 if __name__ == '__main__':
     dic1 = {'a': 1, 'b': 2}
